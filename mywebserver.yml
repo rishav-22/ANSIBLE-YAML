@@ -5,12 +5,12 @@
   tasks:
     - name: install webserver
       apt:
-        name: apache2
+        name: "{{var01}}"
         state: present
       when: ansible_os_family =="Debian"
     - name: I want to start WebServer
       service:
-        name: apache2
+        name: "{{var01}}"
         state: started
       when: ansible_os_family =="Debian"
  
