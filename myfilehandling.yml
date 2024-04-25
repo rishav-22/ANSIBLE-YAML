@@ -1,0 +1,23 @@
+---
+- hosts: 10.0.0.5
+  become: yes
+  tasks: 
+  - include_tasks: myfile.yml
+  - name: install apache2
+    apt:
+      name: apache2
+  - name: copy a file into node 
+    copy:
+       src: myindexfile
+       dest: /home/azureuser
+
+  - name: download remote files(internet)
+    get_url:
+       url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.11/bin/apache-tomcat-10.0.11.tar.gz
+       dest: /home/azureuser
+       force_basic_auth: yes
+
+  - name:  dynamic file 
+    template:
+        src: myindex.j2
+        dest: /var/www/html/index.html

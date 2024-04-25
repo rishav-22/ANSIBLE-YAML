@@ -1,0 +1,24 @@
+--- 
+- mystudents: 
+  - name: anil
+    phno: 89898989
+    address: 
+        doorno: 23
+        streetno: 1
+        pincode: 500034
+
+  - name: sunil
+    phno: 89898989
+    address: 
+      doorno: 24
+      streetno: 2
+      pincode: 500035
+
+  - name: venil
+    phno: 89898989
+    address: 
+         doorno: 25
+         streetno: 3
+         pincode: 500039
+
+  
