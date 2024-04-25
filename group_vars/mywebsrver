@@ -1,4 +1,6 @@
 ---
-var01: apache2
-myjavaonubuntu: openjdk-11-jdk
-myjavaonredhat: java-11-openjdk-devel
+var01:  value
+mywebpackonubuntu: apache2
+mywebpackonredhat: httpd
+myjavaonubuntu: openjdk-8-jdk
+myjavaonredhat: java-1.8.0-openjdk
