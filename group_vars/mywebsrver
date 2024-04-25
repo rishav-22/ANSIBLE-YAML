@@ -1,2 +1,4 @@
 ---
 var01: apache2
+myjavaonubuntu: openjdk-11-jdk
+myjavaonredhat: java-11-openjdk-devel
