@@ -1,0 +1,7 @@
+--- 
+- name: grant tomcat ownership on tomcat folder
+  command:
+    cmd: sudo chown -R tomcat:tomcat /opt/tomcat/
+- name: grant execute permission on bin foilder
+  command:
+    cmd: sudo chmod -R u+x /opt/tomcat/bin
